@@ -1,0 +1,13 @@
+# Configuración de despliegue para Render.com (Infrastructure as Code).
+# Render detecta este archivo automáticamente (Blueprint).
+services:
+  - type: web
+    name: envios-rapidos-gt
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production

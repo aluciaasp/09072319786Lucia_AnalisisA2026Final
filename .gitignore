@@ -1,0 +1,23 @@
+# .NET
+bin/
+obj/
+out/
+*.user
+*.suo
+
+# Base de datos SQLite generada en tiempo de ejecución
+*.db
+*.db-shm
+*.db-wal
+
+# IDE
+.vs/
+.vscode/
+.idea/
+.claude/
+
+# Resultados de pruebas / cobertura
+TestResults/
+coverage/
+*.trx
+*.coverage
